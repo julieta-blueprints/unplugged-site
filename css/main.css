@@ -87,6 +87,214 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* ------------- Base Header - Footer Styles --------------- */
+
+   header,
+   footer {
+    
+   }
+
+   /* ----------------- Mobile Styles -------------------- */
+
+   /* ------------- Header Styles --------------- */
+
+   header{
+    display: flex;
+    justify-content: center;
+   }
+
+   header .content-wrapper {
+    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    
+   }
+
+   header nav ul {
+    display: flex;
+    justify-content: space-around;
+
+   }
+
+   .header-divider {
+
+   }
+   /* ------------- Main Styles --------------- */
+
+   .hero-area {
+    display: flex;
+    justify-content: center;
+   }
+
+   section .content-wrapper {
+    outline: 1px solid red;
+    display: flex;
+    align-content: space-around;
+  
+
+   }
+
+   /* ------ Aside Styles -----*/
+
+   aside {
+    display: flex;
+    justify-content: center;
+
+   }
+
+   aside .content-wrapper {
+    outline: 1px solid red;
+    display: flex;
+    flex-flow: row wrap;
+   }
+
+   .form-description {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    
+   }
+
+   .form {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+
+   /* ------------- Features Styles --------------- */
+
+   .features {
+    display: flex;
+    justify-content: center;
+   }
+
+   .features .content-wrapper {
+    outline: 1px solid red;
+    display: flex;
+    align-items: center;
+   }
+
+
+   .features .features-items {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    flex-flow:row wrap;
+   }
+
+   .fontawesome-icons {
+    display: flex;
+   }
+
+   .features-items-description {
+    display: flex;
+   }
+
+    /* ------------- Reviews Styles --------------- */
+
+    .reviews {
+      display: flex;
+      justify-content: center;
+    }
+
+    .reviews .content-wrapper {
+      outline: 1px solid red;
+      display: flex;
+      align-items: flex-start;
+    }
+
+     /* ------------- Footer Styles --------------- */
+     footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+     footer .content-wrapper {
+      outline: 1px solid red;
+      display: flex;
+      align-items: center;
+      text-align: center;
+     
+
+     }
+
+    footer .footer-content {
+      display: flex;
+      
+     }
+
+    footer .contact {
+      display: flex;
+      
+     }
+
+     footer .social {
+      display: flex;
+     }
+
+     footer .social-icons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;  
+
+     }
+
+     footer .social-icons p {
+      display: flex;
+      justify-content: center;
+     }
+
+     .copyright {
+      display: flex;
+      justify-content: center;
+     }
+
+    /* ------------- End of Homepage Mobile Styles --------------- */
+
+/* ==========================================================================
+     About Page
+   ========================================================================== */
+
+     .mission {
+      display: flex;
+      justify-content: center;
+     }
+
+     .mission .content-wrapper {
+      display: flex;
+
+     }
+
+
+     .contact-section {
+      display: flex;
+      justify-content: center;
+     }
+
+/* ==========================================================================
+     FAQ Page
+   ========================================================================== */     
+
+    .faq {
+      display: flex;
+      justify-content: center;
+      }
+
+      .faq .content-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: row wrap;
+
+      }
+
+ 
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
