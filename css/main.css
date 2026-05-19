@@ -111,23 +111,31 @@ textarea {
     text-decoration: none;
    }
 
+   h1, input {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+   }
+
 
    h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.87em;
+    font-size: 1.875em;
     line-height: 30px;
+    font-weight: 500;
    }
 
 
    h3,
    h4 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.12em;
-    line-height: 24px;
+    font-size: 1.125em;
+    line-height: 24px; /*Is this needed?*/
+    font-weight: 500;
    }
 
 
    p {
+    font-size: 0.875em;
+    line-height: 18px;
 
    }
 
@@ -149,12 +157,6 @@ textarea {
 
 
    .content-wrapper {
-
-   }
-
-
-
-   .content-wrapper {
     outline: 3px dotted red; 
     width: 90%;
     margin: 50px 0;
@@ -172,6 +174,7 @@ textarea {
     padding-bottom:10px;
     display: flex;
     justify-content: center;
+    background: #202322;
    }
 
    header .content-wrapper {
@@ -180,6 +183,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     margin:  0;
+    padding-top: 15px;
    }
 
    .header-divider {
@@ -191,6 +195,8 @@ textarea {
 
    header nav {
     width: 60%;
+    font-size: 1.12em;
+    font-weight: bold;
    }
 
 
@@ -198,8 +204,9 @@ textarea {
     display: flex;
     justify-content: space-around;
     width:100%;
-    padding-bottom: 15px; 
+    padding: 20px 0 15px 0; 
     margin: 0; 
+    text-transform: uppercase;
    }
 
    /* ------------- Main Styles --------------- */
@@ -207,21 +214,73 @@ textarea {
    .hero-area {
     display: flex;
     justify-content: center;
+    color: #e2e3ed;
+   }
+
+   .hero-area .content-wrapper h1 {
+    font-size: 2.25em;
+    line-height: 43px;
+    font-weight: 500;
+
    }
 
    /* ------ Aside Styles -----*/
 
+   aside .form {
+    margin-top: 30px;
+   }
+   
+   input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    color: #2a423a;
+    font-style: italic;
+    padding: 1em;
+    font-size: 1.12em;
+    font-weight: 500;
+    margin-bottom: 20px;
+   }
+
+   input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.125em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+   }
+
+
    aside {
     display: flex;
     justify-content: center;
+    background: #527158;
+    color: #e2e3ed;
    }
    
    .form-description { 
     padding-bottom: 30px; 
    }
 
-   h3 {
+   .form-description p {
+    margin: 0;
+   }
+
+    h3 {
     padding: 20px 0; 
+   }
+
+   .form h3 {
+    margin: 0;
+   }
+
+   input[type=text] {
+    margin-bottom: 0;
    }
    
 
@@ -230,15 +289,19 @@ textarea {
    .features {
     display: flex;
     justify-content: center;
+    color: #e2e3ed;
    }
 
    .features h2 {
+    font-size: 1.875em;
+    line-height: 35px;
     padding-bottom: 60px;
    } 
 
    .features article {
     width: 63%;
     margin: 30px 0;
+    text-align: center;
    }
 
    .features .features-items {
@@ -263,6 +326,8 @@ textarea {
     .reviews {
       display: flex;
       justify-content: center;
+      background: #2a423a;
+      color: #e2e3ed;
     }
 
     .reviews h2 {
@@ -271,6 +336,12 @@ textarea {
 
     .reviews h3 {
       width:55%;
+      margin: 0;
+    }
+
+    .reviews article p {
+      margin:0;
+      font-size: 0.90em;
     }
 
      /* ------------- Footer Styles --------------- */
@@ -280,11 +351,14 @@ textarea {
       flex-direction: column;
       align-items: center;
       text-align: center; /* Check if needed after more styles are applied */
+      background: #202322;
+      color: #e2e3ed;
      }
 
     footer .footer-content {
       display: flex;
       padding: 50px 0;
+      flex-flow: column wrap;
      }
 
     footer .contact {
@@ -293,6 +367,7 @@ textarea {
 
      footer h4 {
       padding: 20px;  
+      margin: 0;
      }
 
      footer p {
@@ -300,7 +375,6 @@ textarea {
      }
  
      footer .social {
-      display: flex;
       padding-bottom: 50px;
      }
 
@@ -332,20 +406,41 @@ textarea {
      .mission {
       display: flex;
       justify-content: center;
+      background: #527158;
+      color: #e2e3ed;
+     }
+
+     .mission .content-wrapper h2 {
+      width: 99%;
+      font-size: 1.875em;
+      line-height: 40px;
      }
 
      .mission-content p {
-      width: 100%;
+      width: 99%;
       margin: 0;
+      font-size: 0.875em;
+      padding-bottom: 15px;
      }
+
+     /* Contact */
 
      .contact-section {
       display: flex;
       justify-content: center;
+      background: #2a423a;
+      color: #e2e3ed;
      }
 
-     .contact-section .content-wrapper h2 { /* Check if needed after next styles*/
-      width: 91%;
+     .contact-section .content-wrapper h2 {
+      width: 91%; /* Check if needed after next styles*/
+      font-size: 1.875em;
+      line-height: 40px;
+     }
+
+     .contact-content h4 {
+      font-size: 1.12em;
+      padding-bottom: 20px;
      }
 
      .contact-content p {
@@ -362,6 +457,8 @@ textarea {
     .faq {
       display: flex;
       justify-content: center;
+      background: #527158;
+      color: #e2e3ed;
       }
 
       .faq .content-wrapper {
@@ -380,9 +477,13 @@ textarea {
        margin-bottom: 50px; 
       }
 
-      h4 { /* Check if needed after next styles */
-        width: 81%;
+      .faq-content h4 { /* Check if needed after next styles */
+        width: 85%;
         margin: 0;
+      }
+
+      .faq-content p {
+        width: 96%;
       }
 
  
@@ -514,6 +615,12 @@ textarea {
    .header-divider {
     display: none;
    }
+
+
+   .hero-area .content-wrapper h1 {
+    font-size: 3em;
+    line-height: 48px;
+   }
     
    aside .content-wrapper {
     margin: 50px 0;  
@@ -528,10 +635,24 @@ textarea {
     margin: 0;
    }
 
+   aside .content-wrapper .form-description h3,
+   aside .content-wrapper .form h3 {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin: 0;
+   }
+
+   .form-description p {
+    font-size: 0.875em;
+   }
+
    /* Features */
 
    .features h2 {
+    font-size: 2.25em;
     padding-bottom: 20px;
+    line-height: 48px;
+    margin: 0;
 
    }
 
@@ -554,6 +675,12 @@ textarea {
 
   /* Reviews */
 
+   .reviews h2 {
+    width: 86%;
+    font-size: 2.25em;
+    line-height: 48px;
+   }
+
    .reviews article {
     display: flex;
     justify-content: space-between;
@@ -567,15 +694,18 @@ textarea {
    }
 
    img { /* Check if needed when adding the image*/
-    width: 48%;
+    width: 50%;
    }
 
-   .reviews h3 { /* Check if needed after adding image */
-    width: 45%;
+   .reviews h3 { 
+    width: 50%;/* Check if needed after adding image */
+    font-size: 1.5em;
+    line-height: 30px;
    }
 
   .reviews p { 
     width: 50%;
+    padding-bottom: 50px;
   }
 
   /* Footer */
@@ -585,6 +715,7 @@ textarea {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
+    margin: 0;
   }
 
   footer .footer-content {
@@ -592,12 +723,17 @@ textarea {
     display:flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
     padding: 100px 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    padding: 40px 0;
   }
 
   .social {
     width: 30%
-
   }
 
 /* ==========================================================================
@@ -627,6 +763,13 @@ header nav ul {
   
 }
 
+.mission .content-wrapper h2 {
+  width: 100%;
+  font-size: 2.25em;
+  line-height: 48px;
+  margin: 20px 0;
+}
+
 .mission-content { 
   display: flex;
   justify-content: space-between;
@@ -641,7 +784,9 @@ header nav ul {
 /* Contact */
 
 .contact-section .content-wrapper h2 {
-  width: 80%;
+  width: 85%;
+  font-size: 2.25em;
+  line-height: 48px;
 }
 
 .contact-content {
@@ -653,6 +798,7 @@ header nav ul {
 .contact-content h4 {
   width: 100%;
   margin-bottom: 20px;
+  font-size: 1.5em;
 }
 
 /* Footer */
@@ -660,6 +806,8 @@ header nav ul {
 footer .content-wrapper { 
   width: 100%;
 }
+
+
 
 
 /* ==========================================================================
@@ -674,13 +822,26 @@ footer .content-wrapper {
   justify-content: space-between;
 }
 
+.faq h2 {
+  width: 100%;
+  font-size: 2.25em;
+  line-height: 48px;  
+}
+
 .faq-content {
   flex-basis: 45%;
 }
 
-.faq h2 {
+.faq-content h4 {
+  width: 100%;
+  font-size: 0.875em;
+  line-height: 15.75px;
+}
+
+.faq-content p {
   width: 100%;
 }
+
 
 }
 
@@ -696,6 +857,21 @@ footer .content-wrapper {
 
   .content-wrapper { 
   max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+  
+  h3, h4 {
+    font-size: 1.875em;
+    font-weight: 500;
+  }
+  
+
+  p {
+    font-size: 1.125em;
+    line-height: 24px;
   }
 
   /* Header */
@@ -718,8 +894,10 @@ footer .content-wrapper {
  
   /* Hero */
 
-  .hero-area h1 {
+  .hero-area .content-wrapper h1 {
     width: 80%;
+    font-size: 3.75em;
+    line-height: 50px;
   }
 
    /* Aside */
@@ -730,7 +908,21 @@ footer .content-wrapper {
 
   aside .content-wrapper .form-description, 
   aside .content-wrapper .form {
-    width: 30%;
+    width: 34%;
+  }
+
+  aside .content-wrapper .form-description h3, 
+  aside .content-wrapper .form h3 {
+    font-size: 1.875em;
+  }
+
+  .form-description h3 {
+    width: 75%;
+  }
+
+  .form-description p {
+    width: 90%;
+    font-size: 1.12em;
   }
 
   /* Features */
@@ -738,8 +930,9 @@ footer .content-wrapper {
   .features h2 {
     width: 90%;
   }
+
   .features article {
-    flex-basis: 30%;
+    flex-basis: 33%;
   }
 
   /* Reviews */
@@ -750,28 +943,35 @@ footer .content-wrapper {
   }
 
   .reviews article { /* Check if needed after adding the image */
-    width: 35%;
+    width: 43.5%;
   }
 
   .reviews article div {
     width: 42%;
   }
 
-  .reviews article h3 { /* Check if needed after adding the image */
-    width: 90%;
+  .reviews article h3 { 
+    width: 95%;/* Check if needed after adding the image */
     margin: 0px;
+    font-size: 1.875em;
   }
 
-  .reviews article p { /* Check if needed after adding the image */
-    width: 90%;
+  .reviews article p { 
+    width: 95%;/* Check if needed after adding the image */
     margin: 0;
+    font-size: 1.12em;
   }
 
   /* Footer */
 
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   footer .social { /* Check if needed after adding icons */
     width: 21%;
   }
+
 
 
 
@@ -785,12 +985,45 @@ footer .content-wrapper {
 
   /* Mission */
 
+  .mission .content-wrapper {
+    justify-content: flex-start;
+  }
+
   .mission .content-wrapper h2 {
-    width: 95%;
+    width: 91.5%; 
     margin: 0; /* Check if needed after adding the map */
+    font-size: 3em;
+    line-height: 58px; 
+  }
+
+
+  .mission-content {
+    padding-top: 40px;
+  }
+
+  .mission-content p {
+    width: 45%;
+    font-size: 1.125em;
+    padding-bottom: 25px;
   }
  
   /* Contact */
+
+  .contact-section .content-wrapper h2 {
+    font-size: 3em; 
+    line-height: 58px;
+    margin-bottom: 0;  
+  }
+
+  .contact-content h4 {
+    font-size: 1.875em;
+  }
+
+  /* Footer */
+
+  footer .footer-content {
+    width: 100%;
+  }
 
    /* ==========================================================================
      FAQ Page
@@ -802,6 +1035,14 @@ footer .content-wrapper {
 
    .faq h2 { 
     width: 100%;
+    font-size: 3em;
+    font-weight: 500;
+   }
+
+   .faq-content h4 {
+    font-size: 1.12em;
+    line-height: 18px;
+    padding-top: 40px;
    }
 }
 
