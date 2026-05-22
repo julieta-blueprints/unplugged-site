@@ -141,12 +141,12 @@ textarea {
 
 
    img {
-
+    width: 100%;
    }
 
 
    figure {
-
+    margin: 0;
    }
 
 
@@ -186,6 +186,10 @@ textarea {
     padding-top: 15px;
    }
 
+   header .content-wrapper figure {
+    width: 60%;
+   }
+
    .header-divider {
     width: 100%;
     height: 1px;
@@ -215,6 +219,12 @@ textarea {
     display: flex;
     justify-content: center;
     color: #e2e3ed;
+    background-image: url('../img/unplugged-retreat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
+    min-height: 600px;
    }
 
    .hero-area .content-wrapper h1 {
@@ -290,11 +300,16 @@ textarea {
     display: flex;
     justify-content: center;
     color: #e2e3ed;
+    background-image: url(../img/unplugged-retreat-features.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #333;
    }
 
    .features h2 {
     font-size: 1.875em;
-    line-height: 35px;
+    line-height: 43px;
     padding-bottom: 60px;
    } 
 
@@ -685,27 +700,27 @@ textarea {
     display: flex;
     justify-content: space-between;
     /* This, below; may change after the addition of the image */
-    flex-direction: column;
-    align-items: flex-end;
+    flex-flow: row wrap;
    }
 
-   .reviews article div {
+   .reviews article figure { /* Check if needed when adding the image*/
+    width: 50%;
+    align-self: center;
+   }
+
+   .reviews article .testimonial {
     width: 49%;
    }
 
-   img { /* Check if needed when adding the image*/
-    width: 50%;
-   }
-
    .reviews h3 { 
-    width: 50%;/* Check if needed after adding image */
+    width: 100%;/* Check if needed after adding image */
     font-size: 1.5em;
     line-height: 30px;
    }
 
   .reviews p { 
-    width: 50%;
-    padding-bottom: 50px;
+    width: 100%;
+    padding-bottom: 40px;
   }
 
   /* Footer */
@@ -882,6 +897,7 @@ footer .content-wrapper {
 
   header .content-wrapper {
     width: 960px;
+    padding-top: 0;
   }
 
   img {
@@ -943,12 +959,17 @@ footer .content-wrapper {
   }
 
   .reviews article { /* Check if needed after adding the image */
-    width: 43.5%;
+    width: 100%;
   }
 
-  .reviews article div {
-    width: 42%;
+  .reviews article figure img {
+    width: 94%;
   }
+
+  .reviews article .testimonial {
+    width: 45%;
+  }
+
 
   .reviews article h3 { 
     width: 95%;/* Check if needed after adding the image */
@@ -960,6 +981,7 @@ footer .content-wrapper {
     width: 95%;/* Check if needed after adding the image */
     margin: 0;
     font-size: 1.12em;
+    padding-bottom: 80px;
   }
 
   /* Footer */
