@@ -815,6 +815,14 @@ header nav ul {
   width: 45%;
 }
 
+
+/* Map */
+
+.map figure {
+  padding-bottom: 45%;
+}
+
+
 /* Contact */
 
 .contact-section .content-wrapper h2 {
@@ -1046,6 +1054,12 @@ footer .content-wrapper {
     width: 45%;
     font-size: 1.125em;
     padding-bottom: 25px;
+  }
+
+  /* Map */
+
+  .map figure {
+    padding-bottom: 37%;
   }
  
   /* Contact */
