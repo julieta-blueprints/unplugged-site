@@ -311,6 +311,7 @@ textarea {
     font-size: 1.875em;
     line-height: 43px;
     padding-bottom: 60px;
+    margin: 0;
    } 
 
    .features article {
@@ -326,14 +327,13 @@ textarea {
     flex-flow:row wrap;
    }
 
-   .features p {
-    margin: 0;
+   p.fontawesome-icons {
+    font-size: 3.75em;
+    padding-bottom: 30px;
    }
 
    .features p {
-    padding-top: 40px;
-    padding-bottom: 30px; 
-    margin: 0; 
+    margin: 0;
    }
 
     /* ------------- Reviews Styles --------------- */
@@ -381,7 +381,7 @@ textarea {
      }
 
      footer h4 {
-      padding: 20px;  
+      padding: 0 20px 20px 20px;  
       margin: 0;
      }
 
@@ -403,6 +403,8 @@ textarea {
      footer .social-icons p {
       display: flex;
       justify-content: center;
+      font-size: 1.125em;
+      padding-top: 20px;
       /* Check if align-items: center; is really needed here or above when adding the icons*/
      }
 
@@ -697,7 +699,7 @@ textarea {
     flex-basis: 50%;
    }
 
-   .features p { /* Check if needed after the icons are on */
+   .features p { 
     padding-top: 0px;
     padding-bottom: 0px;
     margin: 0;
@@ -705,6 +707,7 @@ textarea {
    
   .features .features-item-description {
     width: 62%;
+    padding-top: 25px;
   }
 
   /* Reviews */
@@ -718,7 +721,6 @@ textarea {
    .reviews article {
     display: flex;
     justify-content: space-between;
-    /* This, below; may change after the addition of the image */
     flex-flow: row wrap;
    }
 
