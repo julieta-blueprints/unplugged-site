@@ -395,17 +395,27 @@ textarea {
 
      footer .social-icons {
       display: flex;
-      justify-content: space-around;
-      align-items: center;  
-
+      justify-content: space-around;  
+      padding: 0 70px;
      }
 
      footer .social-icons p {
       display: flex;
       justify-content: center;
       font-size: 1.125em;
-      padding-top: 20px;
-      /* Check if align-items: center; is really needed here or above when adding the icons*/
+     }
+
+     .social-icons p a {
+      color: #e2e3ed;
+      text-decoration: none;
+      border-radius: 50%;
+      background-color: #527158;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1em;
      }
 
      footer .copyright {
@@ -772,6 +782,14 @@ textarea {
     width: 30%
   }
 
+  footer .social-icons {
+    justify-content: center;
+  }
+
+  footer .social-icons p {
+    padding: 0 20px; 
+  }
+
 /* ==========================================================================
      About Page
    ========================================================================== */Tablet styles for the About Page here */
@@ -1019,8 +1037,9 @@ footer .content-wrapper {
     font-size: 1.875em;
   }
 
-  footer .social { /* Check if needed after adding icons */
+  footer .social { 
     width: 21%;
+    padding-right: 30px;
   }
 
 
