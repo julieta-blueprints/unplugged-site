@@ -157,7 +157,7 @@ textarea {
 
 
    .content-wrapper {
-    outline: 3px dotted red; 
+    /* outline: 3px dotted red; */
     width: 90%;
     margin: 50px 0;
 
@@ -188,18 +188,18 @@ textarea {
 
    header .content-wrapper figure {
     width: 60%;
+    padding-bottom: 10px;
    }
 
    .header-divider {
     width: 100%;
     height: 1px;
-    padding-bottom: 10px 0 20px 0;
    }
 
 
    header nav {
     width: 60%;
-    font-size: 1.12em;
+    font-size: 1.25em;
     font-weight: bold;
    }
 
@@ -208,7 +208,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     width:100%;
-    padding: 20px 0 15px 0; 
+    padding: 20px 0 5px 0; 
     margin: 0; 
     text-transform: uppercase;
    }
@@ -224,10 +224,11 @@ textarea {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #333;
-    min-height: 600px;
+    min-height: 500px;
    }
 
    .hero-area .content-wrapper h1 {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
     font-size: 2.25em;
     line-height: 43px;
     font-weight: 500;
@@ -272,20 +273,19 @@ textarea {
     background: #527158;
     color: #e2e3ed;
    }
-   
-   .form-description { 
-    padding-bottom: 30px; 
-   }
 
    .form-description p {
     margin: 0;
    }
 
-    h3 {
+   .form-description h3 {
     padding: 20px 0; 
+    margin: 0;
+
    }
 
    .form h3 {
+    padding-bottom: 20px;
     margin: 0;
    }
 
@@ -347,10 +347,12 @@ textarea {
 
     .reviews h2 {
       padding-bottom: 40px;
+      margin: 0;
     }
 
     .reviews h3 {
       width:55%;
+      padding: 20px 0;
       margin: 0;
     }
 
@@ -365,14 +367,14 @@ textarea {
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center; /* Check if needed after more styles are applied */
+      text-align: center;
       background: #202322;
       color: #e2e3ed;
      }
 
     footer .footer-content {
       display: flex;
-      padding: 50px 0;
+      padding-top: 25px;
       flex-flow: column wrap;
      }
 
@@ -410,12 +412,12 @@ textarea {
       text-decoration: none;
       border-radius: 50%;
       background-color: #527158;
-      width: 40px;
-      height: 40px;
+      width: 45px;
+      height: 45px;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 1em;
+      font-size: 1.3em;
      }
 
      footer .copyright {
@@ -441,6 +443,7 @@ textarea {
       width: 99%;
       font-size: 1.875em;
       line-height: 40px;
+      margin: 0 0 20px 0;
      }
 
      .mission-content p {
@@ -479,18 +482,19 @@ textarea {
      }
 
      .contact-section .content-wrapper h2 {
-      width: 91%; /* Check if needed after next styles*/
       font-size: 1.875em;
       line-height: 40px;
+      margin: 0 0 25px 0;
      }
 
      .contact-content h4 {
       font-size: 1.12em;
       padding-bottom: 20px;
+      margin: 0;
      }
 
      .contact-content p {
-      padding-bottom: 20px; /* Check if needed after next styles */
+      padding-bottom: 20px;
       margin: 0;
      }
 
@@ -516,20 +520,20 @@ textarea {
       }
 
       .faq h2 {
-       margin-bottom: 40px; 
+       padding: 5px 0 30px 0;
+       margin: 0px; 
       }
 
-      .faq-content {
-       margin-bottom: 50px; 
-      }
-
-      .faq-content h4 { /* Check if needed after next styles */
+      .faq-content h4 {
         width: 85%;
+        padding-top: 30px;
         margin: 0;
       }
 
       .faq-content p {
         width: 96%;
+        padding:20px 0 55px 0;
+        margin: 0;
       }
 
  
@@ -645,6 +649,12 @@ textarea {
    header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    padding-top: 0;
+   }
+
+
+   header .content-wrapper figure {
+    width: 30%;
    }
 
 
@@ -662,14 +672,18 @@ textarea {
     display: none;
    }
 
+   .hero-area {
+    min-height: 600px;
+   }
 
    .hero-area .content-wrapper h1 {
     font-size: 3em;
     line-height: 48px;
+    margin: 0;
    }
     
    aside .content-wrapper {
-    margin: 50px 0;  
+    margin: 75px 0 50px 0;  
     display: flex; 
     justify-content: space-between;
     align-content: flex-start; 
@@ -686,6 +700,10 @@ textarea {
     font-size: 1.5em;
     line-height: 30px;
     margin: 0;
+   }
+
+   .form-description h3 {
+    padding: 0 0 20px 0;
    }
 
    .form-description p {
@@ -709,6 +727,10 @@ textarea {
     flex-basis: 50%;
    }
 
+   p.fontawesome-icons {
+    font-size: 3.90em;
+   }
+
    .features p { 
     padding-top: 0px;
     padding-bottom: 0px;
@@ -717,7 +739,7 @@ textarea {
    
   .features .features-item-description {
     width: 62%;
-    padding-top: 25px;
+    padding-top: 30px;
   }
 
   /* Reviews */
@@ -726,6 +748,8 @@ textarea {
     width: 86%;
     font-size: 2.25em;
     line-height: 48px;
+    padding-bottom: 15px;
+    margin: 0;
    }
 
    .reviews article {
@@ -734,24 +758,25 @@ textarea {
     flex-flow: row wrap;
    }
 
-   .reviews article figure { /* Check if needed when adding the image*/
-    width: 50%;
+   .reviews article figure {
+    width: 48%;
     align-self: center;
    }
 
    .reviews article .testimonial {
-    width: 49%;
+    width: 50%;
    }
 
    .reviews h3 { 
     width: 100%;/* Check if needed after adding image */
     font-size: 1.5em;
     line-height: 30px;
+    padding: 15px 0;
    }
 
   .reviews p { 
     width: 100%;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
   }
 
   /* Footer */
@@ -770,16 +795,18 @@ textarea {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    padding: 100px 0;
+    padding: 100px 0 60px 0;
   }
 
   footer h4 {
     font-size: 1.5em;
-    padding: 40px 0;
+    padding: 20px 0 50px 0;
+    
   }
 
   .social {
-    width: 30%
+    width: 30%;
+    padding-bottom: 45px;
   }
 
   footer .social-icons {
@@ -859,8 +886,8 @@ header nav ul {
 
 .contact-content h4 {
   width: 100%;
-  margin-bottom: 20px;
   font-size: 1.5em;
+  padding-bottom: 25px;
 }
 
 /* Footer */
@@ -882,12 +909,14 @@ footer .content-wrapper {
 
 .faq .content-wrapper {
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .faq h2 {
   width: 100%;
   font-size: 2.25em;
   line-height: 48px;  
+  padding-bottom: 40px;
 }
 
 .faq-content {
@@ -948,7 +977,7 @@ footer .content-wrapper {
   }
 
   img {
-    width: 30%;
+    width: 100%;
   }
 
   header nav {
@@ -956,6 +985,10 @@ footer .content-wrapper {
   }
  
   /* Hero */
+
+  .hero-area {
+    min-height: 545px;
+  }
 
   .hero-area .content-wrapper h1 {
     width: 80%;
@@ -987,6 +1020,14 @@ footer .content-wrapper {
     width: 90%;
     font-size: 1.12em;
   }
+  
+  input[type=text] {
+    width: 90%;
+  }
+
+  input[type=button] {
+    width: 90%;
+  }
 
   /* Features */
 
@@ -998,11 +1039,15 @@ footer .content-wrapper {
     flex-basis: 33%;
   }
 
+  p.fontawesome-icons {
+    font-size: 4.90em;
+  }
+
   /* Reviews */
 
   .reviews h2 {
     margin: 0;
-    padding-bottom: 50px;
+    padding: 10px 0 60px 0;
   }
 
   .reviews article { /* Check if needed after adding the image */
@@ -1010,7 +1055,7 @@ footer .content-wrapper {
   }
 
   .reviews article figure img {
-    width: 94%;
+    width: 96%;
   }
 
   .reviews article .testimonial {
@@ -1022,19 +1067,24 @@ footer .content-wrapper {
     width: 95%;/* Check if needed after adding the image */
     margin: 0px;
     font-size: 1.875em;
+    padding-bottom: 20px;
   }
 
   .reviews article p { 
-    width: 95%;/* Check if needed after adding the image */
+    width: 94%;
     margin: 0;
     font-size: 1.12em;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
   }
 
   /* Footer */
 
   footer h4 {
     font-size: 1.875em;
+  }
+
+  footer p {
+    line-height: 22px;
   }
 
   footer .social { 
@@ -1060,7 +1110,7 @@ footer .content-wrapper {
   }
 
   .mission .content-wrapper h2 {
-    width: 91.5%; 
+    width: 98%; 
     margin: 0; /* Check if needed after adding the map */
     font-size: 3em;
     line-height: 58px; 
@@ -1075,6 +1125,7 @@ footer .content-wrapper {
     width: 45%;
     font-size: 1.125em;
     padding-bottom: 25px;
+    line-height: 22px;
   }
 
   /* Map */
@@ -1088,11 +1139,15 @@ footer .content-wrapper {
   .contact-section .content-wrapper h2 {
     font-size: 3em; 
     line-height: 58px;
-    margin-bottom: 0;  
+    margin-bottom: 25px;  
   }
 
   .contact-content h4 {
     font-size: 1.875em;
+  }
+
+  .contact-content p {
+    padding-bottom: 0;
   }
 
   /* Footer */
@@ -1113,12 +1168,18 @@ footer .content-wrapper {
     width: 100%;
     font-size: 3em;
     font-weight: 500;
+    padding-bottom: 30px;
    }
 
    .faq-content h4 {
     font-size: 1.12em;
     line-height: 18px;
     padding-top: 40px;
+   }
+
+   .faq-content p {
+    padding-bottom: 25px;
+    line-height: 18px;
    }
 }
 
