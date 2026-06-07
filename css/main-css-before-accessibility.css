@@ -113,14 +113,14 @@
     font-family: "Poppins", Helvetica, Arial, sans-serif;
   }
   
-  .mission h1, .faq h1, h2 {
+  h2 {
     font-family: "Poppins", sans-serif;
     font-size: 1.875em;
     line-height: 30px;
     font-weight: 500;
   }
   
-  .form-description h2, .faq-content h2, h3,
+  h3,
   h4 {
     font-family: "Poppins", sans-serif;
     font-size: 1.125em;
@@ -236,7 +236,6 @@
     font-size: 1.12em;
     font-weight: 500;
     margin-bottom: 20px;
-    margin-top: 10px;
   }
   
   input[type="button"] {
@@ -264,7 +263,7 @@
     margin: 0;
   }
   
-  .form-description h2 {
+  .form-description h3 {
     padding: 20px 0;
     margin: 0;
   }
@@ -374,7 +373,7 @@
     margin-bottom: 50px;
   }
   
-  footer h3 {
+  footer h4 {
     padding: 0 20px 20px 20px;
     margin: 0;
   }
@@ -432,7 +431,7 @@
     color: #e9eaf1;
   }
   
-  .mission .content-wrapper h1 {
+  .mission .content-wrapper h2 {
     width: 99%;
     font-size: 1.875em;
     line-height: 40px;
@@ -479,7 +478,7 @@
     margin: 0 0 25px 0;
   }
   
-  .contact-content h3 {
+  .contact-content h4 {
     font-size: 1.12em;
     padding-bottom: 20px;
     margin: 0;
@@ -509,12 +508,12 @@
     margin: 50px 0 0 0;
   }
   
-  .faq h1 {
+  .faq h2 {
     padding: 5px 0 30px 0;
     margin: 0px;
   }
   
-  .faq-content h2 {
+  .faq-content h4 {
     width: 85%;
     padding-top: 30px;
     margin: 0;
@@ -677,14 +676,14 @@
       margin: 0;
     }
   
-    aside .content-wrapper .form-description h2,
+    aside .content-wrapper .form-description h3,
     aside .content-wrapper .form h3 {
       font-size: 1.5em;
       line-height: 30px;
       margin: 0;
     }
   
-    .form-description h2 {
+    .form-description h3 {
       padding: 0 0 20px 0;
     }
   
@@ -726,7 +725,7 @@
     /* Reviews */
   
     .reviews h2 {
-      width: 85%;
+      width: 86%;
       font-size: 2.25em;
       line-height: 48px;
       padding-bottom: 15px;
@@ -784,7 +783,7 @@
       width: 30%;
     }
   
-    footer h3 {
+    footer h4 {
       font-size: 1.5em;
       padding: 20px 0 50px 0;
     }
@@ -829,7 +828,7 @@
       flex-flow: row wrap;
     }
   
-    .mission .content-wrapper h1 {
+    .mission .content-wrapper h2 {
       width: 100%;
       font-size: 2.25em;
       line-height: 48px;
@@ -867,7 +866,7 @@
       align-items: flex-start;
     }
   
-    .contact-content h3 {
+    .contact-content h4 {
       width: 100%;
       font-size: 1.5em;
       padding-bottom: 25px;
@@ -886,7 +885,7 @@
       padding-bottom: 20px;
     }
   
-    .faq h1 {
+    .faq h2 {
       width: 100%;
       font-size: 2.25em;
       line-height: 48px;
@@ -897,7 +896,7 @@
       flex-basis: 45%;
     }
   
-    .faq-content h2 {
+    .faq-content h4 {
       width: 100%;
       font-size: 0.875em;
       line-height: 15.75px;
@@ -925,7 +924,7 @@
       font-size: 2.25em;
     }
   
-    .form-description h2, h3
+    h3,
     h4 {
       font-size: 1.875em;
       font-weight: 500;
@@ -978,13 +977,12 @@
       width: 34%;
     }
   
-    aside .content-wrapper .form-description h2,
+    aside .content-wrapper .form-description h3,
     aside .content-wrapper .form h3 {
       font-size: 1.875em;
-      line-height: 35px;
     }
   
-    .form-description h2 {
+    .form-description h3 {
       width: 75%;
     }
   
@@ -1045,7 +1043,7 @@
   
     /* Footer */
   
-    footer h3 {
+    footer h4 {
       font-size: 1.875em;
     }
   
@@ -1072,7 +1070,7 @@
       justify-content: flex-start;
     }
   
-    .mission .content-wrapper h1 {
+    .mission .content-wrapper h2 {
       width: 98%;
       font-size: 3em;
       line-height: 58px;
@@ -1104,7 +1102,7 @@
       margin-bottom: 25px;
     }
   
-    .contact-content h3 {
+    .contact-content h4 {
       font-size: 1.875em;
     }
   
@@ -1126,14 +1124,14 @@
       max-width: 960px;
     }
   
-    .faq h1 {
+    .faq h2 {
       width: 100%;
       font-size: 3em;
       font-weight: 500;
       padding-bottom: 30px;
     }
   
-    .faq-content h2 {
+    .faq-content h4 {
       font-size: 1.12em;
       line-height: 18px;
       padding-top: 40px;
